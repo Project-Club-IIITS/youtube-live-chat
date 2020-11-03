@@ -1,0 +1,68 @@
+:root {
+  --brand: #ff0000;
+  --chroma-key: #2bc401;
+  --brand-text: #ffffff;
+}
+
+#highlight {
+  background: var(--chroma-key);
+  margin: 1rem 5% 2rem;
+  border: 2rem solid var(--chroma-key);
+  height: 10rem;
+  width: calc(90% - 4rem);
+  position: relative;
+  overflow: hidden;
+}
+
+#highlight-img {
+  transition: opacity 0s;
+  opacity: 0;
+  background-color: #ffffff;
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  top: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 0.35rem solid var(--brand);
+  object-fit: fill;
+}
+
+#highlight-name {
+  transition: opacity 0s;
+  opacity: 0;
+  color: var(--brand-text);
+  background-color: var(--brand);
+  position: absolute;
+  height: 2.5rem;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  padding-left: 5rem;
+  padding-right: 2rem;
+  top: 3rem;
+  left: 4rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 0.03rem -0.03rem 0.05rem 0.05rem rgba(60, 60, 60, 0.3);
+  box-shadow: 0.03rem 0.03rem 0.05rem 0.05rem rgba(60, 60, 60, 0.3);
+  font-family: "Itim", cursive;
+}
+
+#highlight-msg {
+  transition: opacity 0s;
+  opacity: 0;
+  min-width: 20rem;
+  background-color: #fdfdfd;
+  position: absolute;
+  font-size: 1.5rem;
+  padding-left: 7rem;
+  padding-right: 2rem;
+  top: 5.5rem;
+  left: 4rem;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: 0.03rem -0.03rem 0.05rem 0.05rem rgba(60, 60, 60, 0.3);
+  box-shadow: 0.03rem 0.03rem 0.05rem 0.05rem rgba(60, 60, 60, 0.3);
+  font-family: "Roboto", sans-serif;
+}

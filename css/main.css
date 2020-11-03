@@ -1,0 +1,215 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#heading {
+  height: 3rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  font-family: "Itim", cursive;
+  font-size: 2.7rem;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-style: normal;
+  padding: 0.2rem 0.5rem;
+}
+
+input,
+#clear,
+#default {
+  margin: 0.3rem 0;
+  box-sizing: border-box;
+  height: 2.2rem;
+  outline: none;
+  background: transparent;
+  font-size: 1.1rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+}
+
+#chroma-color {
+  border: 0.2rem solid var(--chroma-key);
+}
+
+#brand-color {
+  border: 0.2rem solid var(--brand);
+}
+
+#brand-text {
+  border: 0.2rem solid var(--brand-text);
+}
+
+#clear,
+#default {
+  color: #000;
+  border: 0.2rem solid #000;
+}
+
+.error,
+.info {
+  margin: 0.2rem auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
+
+.info {
+  color: darkslategray;
+}
+
+#content {
+  height: calc(100vh - 22rem);
+  display: flex;
+  width: 98%;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#buttons-content {
+  align-self: center;
+  overflow: hidden;
+  width: calc(30% - 0.01rem);
+}
+
+#list-content {
+  overflow-y: scroll;
+  width: 70%;
+}
+
+#auth {
+  font-family: "Itim", cursive;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 0.3rem;
+  outline: 0;
+  background: #4534ff;
+  color: #ffffff;
+  border: 0;
+  font-weight: bolder;
+  box-shadow: 0.01rem 0.01rem 0.2rem 0.01rem #000,
+    0.01rem -0.01rem 0.2rem 0.01rem #000, -0.01rem 0.01rem 0.2rem 0.01rem #000,
+    -0.01rem -0.01rem 0.2rem 0.01rem #000;
+  border-radius: 0.01rem;
+  cursor: pointer;
+}
+
+#auth:hover {
+  background-color: #5748f1;
+}
+
+.list {
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list:hover {
+  background-color: #efefef;
+}
+
+.list img {
+  margin: 0 2rem;
+}
+
+.list a {
+  color: #3526d8;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 2rem;
+  text-decoration: none;
+}
+
+.list button {
+  --color: rgb(5, 4, 92);
+  outline: 0;
+  cursor: pointer;
+  border: 0.1rem solid var(--color);
+  background: transparent;
+  color: var(--color);
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+.list button:hover {
+  color: #fff;
+  background-color: var(--color);
+}
+
+.list:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: 50%;
+  width: 95%;
+  height: 0.04rem;
+  background-color: black;
+  transform: translateX(-50%);
+}
+
+.list::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 50%;
+  width: 95%;
+  height: 0.04rem;
+  background-color: black;
+  transform: translateX(-50%);
+}
+
+.comment-button {
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.4rem;
+  outline: 0;
+  border: 0;
+  color: #222;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  max-width: 95%;
+  background: #cecece;
+  margin: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.comment-button:hover::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: "Show this";
+  color: #000;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

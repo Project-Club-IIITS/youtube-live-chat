@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Live Chat</title>
+    <meta charset="UTF-8" />
+    <meta lang="en" />
+    <meta
+      name="GOOGLE_CLIENT_ID"
+      content="82767591783-orivfqch7rc6r5au398qass9j9u5n10c.apps.googleusercontent.com"
+    />
+    <meta
+      name="GOOGLE_API_KEY"
+      content="AIzaSyAf6hXwc_74xQJ_0oyCN6eDYjX4gkH9dNE"
+    />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <h1 id="heading">Youtube Live Chat</h1>
+    <div id="highlight">
+      <div id="highlight-name"></div>
+      <div id="highlight-msg"></div>
+      <img id="highlight-img" src="" alt="" />
+    </div>
+    <div id="content">
+      <div id="buttons-content">
+        <button id="auth">Sign In</button>
+        <div class="error" id="auth-error"></div>
+        <label for="chroma-color">Chroma Key (Background)</label>
+        <input
+          id="chroma-color"
+          type="color"
+          value="#2bc401"
+          name="chroma-color"
+        />
+        <br />
+        <label for="brand-color">Brand Color</label>
+        <input
+          id="brand-color"
+          type="color"
+          value="#ff0000"
+          name="brand-color"
+        />
+        <br />
+        <label for="brand-text">Brand Text Color</label>
+        <input id="brand-text" type="color" value="#ffffff" name="brand-text" />
+        <br />
+        <label>Comments</label>
+        <button id="clear" name="clear">Hide</button>
+        <button id="default" name="default">Show Default</button>
+      </div>
+      <div id="list-content">
+        <div id="streams"></div>
+        <div id="comments"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    init();
+  </script>
+</html>

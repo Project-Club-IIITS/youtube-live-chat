@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Live Chat</title>
+    <meta charset="UTF-8" />
+    <meta lang="en" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <h1>Youtube Live Chat</h1>
+    <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
+      <label for="api_key">Google API Key: </label
+      ><input type="text" name="api_key" id="api_key" />
+      <br />
+      <label for="api_key">Google Client ID: </label
+      ><input type="text" name="client_id" id="client_id" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>Guide:</h3>
+    <p>
+      <strong>Google API Key: </strong> Get a new Google API Key from Cloud
+      Console. To use the application, you must enable
+      <em>Youtube Data API v3</em>. It is suggested that you restrict the key to
+      allow use of only Youtube Data API v3 as well.
+      <br />
+      <strong>Google Client ID: </strong> To get a OAuth Client ID, you will
+      have to configure consent screen in Google Cloud Console. Then generate a
+      new OAuth Key. Select Application Type as <em>Web Application</em>. Also,
+      set the Authorized Javascript Domains to the domain where you will host
+      the application. (For some reason, Google Client API only supports domains
+      containg words, i.e. domains like 127.0.0.1 or 10.1.1.1 won't work.)
+    </p>
+    <p style="text-align: center; font-size: 1.3rem">
+      Made by <a href="https://iota-iiits.tech">IOTA</a>
+    </p>
+  </body>
+</html>
