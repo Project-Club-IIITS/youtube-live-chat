@@ -156,7 +156,7 @@ function getChat(chatId) {
           console.error(error);
         }
       );
-  }, 120000);
+  }, 30000);
 }
 
 function listStreams() {
